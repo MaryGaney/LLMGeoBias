@@ -1,3 +1,4 @@
+Website link: https://maryganey.github.io/LLMGeoBias/
 # GPT and ZIP Code Demographic Bias Explorer
 
 This project investigates how GPT-4.0 assigns ZIP codes based on user-level demographic information and whether these assignments reveal consistent patterns or biases related to race, gender, age, and rurality.  
