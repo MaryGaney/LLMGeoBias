@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bias Visualization</title>
+  <script>
+    function updateFileOptions() {
+      const plotType = document.getElementById("plotType").value;
+      const fileDropdown = document.getElementById("fileChoice");
+
+      const scatterOptions = ["full_scatter.html", "no_gender_scatter.html", "no_race_scatter.html"];
+      const choroplethOptions = ["full_choropleth.html", "no_gender_choropleth.html", "no_race_choropleth.html"];
+
+      let options = [];
+      if (plotType === "Scatter") options = scatterOptions;
+      else if (plotType === "Choropleth") options = choroplethOptions;
+
+      fileDropdown.innerHTML = ""; // Clear old options
+      options.forEach(function(file) {
+        const option = document.createElement("option");
+        option.value = file;
+        option.text = file.replace(".html", "").replaceAll("_", " ");
+        fileDropdown.appendChild(option);
+      });
+    }
+
+    function openFile() {
+      const selectedFile = document.getElementById("fileChoice").value;
+      if (selectedFile) {
+        window.open(selectedFile, "_blank");
+      }
+    }
+  </script>
+</head>
+<body>
+  <h2>Choose Visualization</h2>
+
+  <label for="plotType">Plot Type:</label>
+  <select id="plotType" onchange="updateFileOptions()">
+    <option value="">--Select--</option>
+    <option value="Scatter">Scatter</option>
+    <option value="Choropleth">Choropleth</option>
+  </select>
+
+  <br><br>
+
+  <label for="fileChoice">File:</label>
+  <select id="fileChoice"></select>
+
+  <br><br>
+
+  <button onclick="openFile()">Open Plot</button>
+</body>
+</html>
