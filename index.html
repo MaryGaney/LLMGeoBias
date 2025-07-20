@@ -55,27 +55,15 @@
     }
 
     button {
-      background-color: #DC231E;
+      background-color: #990000;
       color: white;
       cursor: pointer;
     }
 
     button:hover {
-      background-color: #B11C00;
+      background-color: #990000;
     }
 
-    #orientation-alert {
-      display: none;
-      position: fixed;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      background: rgba(0, 0, 0, 0.7);
-      color: white;
-      font-size: 1.5em;
-      text-align: center;
-      padding-top: 30%;
-      z-index: 1000;
-    }
   </style>
 
   <script>
@@ -120,24 +108,10 @@
       }
     }
 
-    function checkOrientation() {
-      const alert = document.getElementById('orientation-alert');
-      if (window.innerWidth < 600 && window.innerHeight > window.innerWidth) {
-        alert.style.display = 'block';
-      } else {
-        alert.style.display = 'none';
-      }
-    }
-
-    window.addEventListener('load', checkOrientation);
-    window.addEventListener('resize', checkOrientation);
   </script>
 </head>
 
 <body>
-  <div id="orientation-alert">
-    Please rotate your phone to landscape for best viewing.
-  </div>
 
   <header>
     <h1>Interactive GPT ZIP Prediction Viewer</h1>
