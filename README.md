@@ -19,9 +19,6 @@ From the main HTML interface, you can:
    - `No Race`, `No Gender`, etc.: Removes individual features from the input to observe their impact on GPT predictions  
 All map outputs are color-coded based on prediction distance or demographic match to help interpret how features shift GPT’s reasoning.  
 
-## Mobile-Friendly View
-If you're using a mobile phone, the page will ask you to rotate your device to landscape mode for best viewing.  
-
 ## Research Poster
 You can view the full research summary and results in the academic poster below:  
 [**Click here to view the research poster (PDF)**](POSTER_LINK_HERE)
