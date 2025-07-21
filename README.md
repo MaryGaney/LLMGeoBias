@@ -21,7 +21,7 @@ All map outputs are color-coded based on prediction distance or demographic matc
 
 ## Research Poster
 You can view the full research summary and results in the academic poster below:  
-[**Click here to view the research poster (PDF)**](POSTER_LINK_HERE)
+[**Click here to view the research poster (PDF)**](./research_poster.pdf)
 
 ## Demographic Summary
 Our population was not evenly distributed:
